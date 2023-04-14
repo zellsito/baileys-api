@@ -1,0 +1,2 @@
+MONGO_URI=mongodb://localhost:27017/baileys-api
+ADMIN_NUMBER=5491169940853@s.whatsapp.net
