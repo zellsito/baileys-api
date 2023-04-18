@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "c8046d75-93e2-45a5-b52e-361e8067da83",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8732250"
+	},
+	"item": [
+		{
+			"name": "Fake Reply PM",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jid\": \"5491169940853@s.whatsapp.net\",\r\n    \"msg\": { \r\n        \"text\": \"asddddddddddddddddasd\"\r\n    },\r\n    \"opts\": { \r\n        \"quoted\": {\r\n            \"key\": {\r\n                \"remoteJid\": \"5491169940853@s.whatsapp.net\"\r\n            },\r\n            \"message\": {\r\n                \"conversation\": \"que haces lucho222?\"\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/messages",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fake Reply Group",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jid\": \"120363139289997402@g.us\",\r\n    \"msg\": { \r\n        \"text\": \"Mi mensaje\"\r\n    },\r\n    \"opts\": { \r\n        \"quoted\": {\r\n            \"key\": {\r\n                \"remoteJid\": \"120363139289997402@g.us\",\r\n                \"fromMe\": false,\r\n                \"id\": null,\r\n                \"participant\": \"5491169940853@s.whatsapp.net\"\r\n            },\r\n            \"message\": {\r\n                \"conversation\": \"Fake msg\"\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/messages",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verified PM",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jid\": \"5491169940853@s.whatsapp.net\",\r\n    \"msg\": { \r\n        \"text\": \"Mi texto\"\r\n    },\r\n    \"opts\": { \r\n        \"quoted\": { \r\n            \"key\": { \r\n                \"participants\": \"0@s.whatsapp.net\", \r\n                \"remoteJid\": \"status@broadcast\"\r\n            }, \r\n            \"message\": { \r\n                \"contactMessage\": { \r\n                    \"vcard\": \"BEGIN:VCARD\\nVERSION:3.0\\nN:Sy;Bot;;;\\nFN:y\\nitem1.TEL;waid=5491166696678:5491166696678\\nitem1.X-ABLabel:Ponsel\\nEND:VCARD\"\r\n                }\r\n            }, \r\n            \"participant\": \"0@s.whatsapp.net\" \r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/messages",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verified Group",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jid\": \"120363139289997402@g.us\",\r\n    \"msg\": { \r\n        \"text\": \"Mi mensaje\"\r\n    },\r\n    \"opts\": { \r\n        \"quoted\": { \r\n            \"key\": { \r\n                \"participants\": \"5491166696678@s.whatsapp.net\", \r\n                \"remoteJid\": \"status@broadcast\"\r\n            }, \r\n            \"message\": { \r\n                \"contactMessage\": { \r\n                    \"vcard\": \"BEGIN:VCARD\\nVERSION:3.0\\nN:Sy;Bot;;;\\nFN:y\\nitem1.TEL;waid=5491166696678:5491166696678\\nitem1.X-ABLabel:Ponsel\\nEND:VCARD\"\r\n                }\r\n            }, \r\n            \"participant\": \"0@s.whatsapp.net\" \r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/messages",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Groups",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/groups",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"groups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Group Metadata",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/groups/120363139289997402@g.us",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"groups",
+						"120363139289997402@g.us"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
